@@ -1,7 +1,6 @@
 import { Container } from "./style.js"
 
-const CharCard = ({id, name, episode, gender, image, species, status}) => {
-    console.log(episode)
+const CharCard = ({id, name, episode, gender, image, species, status}) => {   
     
     return(      
            <Container>

@@ -7,7 +7,6 @@ import Character from './components/Chacarcters';
 function App() {
 const [characterList , SetCharacterList ] = useState([])
 
-
 useEffect(() => {
   fetch("https://rickandmortyapi.com/api/character/")
   .then((response) => response.json())
