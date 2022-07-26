@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`  
-  color: #ffff;
+  color: #ffff;  
+  display :flex ;
+  flex-direction: column;
 
   span{
     font-size: 12px;
@@ -10,17 +12,27 @@ export const Container = styled.div`
     margin-top: 20px;
   }
 
-  h2{
-    font-size: 15px;
+  p{
+    font-size: 12px;
     padding-left: 15px;
     margin: 0;
     margin-top: 5px;
+  }
+ 
+  .containerImagem{
+    overflow: hidden;
+  }
+
+  .containerImagem:hover{
+    width: 200px;
+    height: 250px;   
   }
 
   img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-  }
+    width: 100%;
+  } 
 
   li{
     display: flex;
@@ -30,6 +42,8 @@ export const Container = styled.div`
     cursor: pointer; 
     border-radius: 10px;
     padding-bottom: 10px;
+    width: 200px;
+    height: 250px;
   }
 
   li:hover{
@@ -67,5 +81,7 @@ export const Container = styled.div`
     margin-top: 5px;
     border-radius:50%;
   }
+
+  
 `
 

@@ -5,15 +5,16 @@ const CharCard = ({id, name, episode, gender, image, species, status}) => {
     return(      
            <Container>
             <li key={id} >            
-            <img src={image} alt={name}></img>  
-            <span>Personagem info:</span>          
-            <h2>Nome: {name}</h2>
-            <h2>Especie: {species}</h2>
-            <h2>Genero: {gender}</h2>
+            <div className="containerImagem">
+            <img src={image} alt={name}></img></div>          
+          <span>Personagem info:</span>          
+            <p>Nome: {name}</p>
+            <p>Especie: {species}</p>
+            <p>Genero: {gender}</p>
             <div className="containerStatus">
             <div className={status}></div>
-            <h2>Status: {status}</h2>            
-            </div>
+            <p>Status: {status}</p>            
+            </div>      
             </li>
             </Container>       
              

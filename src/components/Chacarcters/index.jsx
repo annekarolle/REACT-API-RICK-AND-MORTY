@@ -6,8 +6,7 @@ const Character = ({characterList}) => {
 
     if (characterList){
         return (
-            <>
-            <h1>Meus personagens</h1> 
+            <>           
             <ul>
             {
                 characterList.map((char) =>
