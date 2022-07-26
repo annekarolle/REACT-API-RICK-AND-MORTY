@@ -6,7 +6,7 @@ const CharCard = ({id, name, episode, gender, image, species, status}) => {
     return(      
            <Container>
             <li key={id} >            
-            <img src={image}></img>  
+            <img src={image} alt={name}></img>  
             <span>Personagem info:</span>          
             <h2>Nome: {name}</h2>
             <h2>Especie: {species}</h2>
